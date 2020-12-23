@@ -1,5 +1,5 @@
 from PIL import Image
-import _rpi_ws281x as ws
+import rpi_ws281x as ws
 import atexit
 import numpy as np
 
