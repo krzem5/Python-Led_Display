@@ -1,7 +1,7 @@
 from PIL import Image
-import rpi_ws281x as ws
 import atexit
 import numpy as np
+import rpi_ws281x as ws
 
 
 

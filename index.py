@@ -53,7 +53,7 @@ def main(d):
 	# 	d.update()
 	# 	time.sleep(0.016)
 	##########################################
-	for _ in range(50):
+	for _ in range(75):
 		for j in range(0,256):
 			d.data[j]=hue(random.randint(0,255))
 		d.brightness(random.randint(1,255))
