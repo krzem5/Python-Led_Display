@@ -53,17 +53,25 @@ def main(d):
 	# 	d.update()
 	# 	time.sleep(0.016)
 	##########################################
-	for _ in range(75):
-		for j in range(0,256):
-			d.data[j]=hue(random.randint(0,255))
-		d.brightness(random.randint(1,255))
-		d.update()
-		time.sleep(0.01)
+	# img=Image.new("RGB",(32,8),(0,0,0))
+	# draw=ImageDraw.Draw(img)
+	# draw.rectangle((0,0,31,7),fill=(0,0,0))
+	# draw.text((0,0),"ABCD",fill=(255,0,0))
+	# d.data.image(img)
+	# d.update()
+	# time.sleep(10)
 	##########################################
-	# d.brightness(16)
-	# for i in range(1000):
+	# for _ in range(75):
 	# 	for j in range(0,256):
-	# 		d.data[j]=hue((j+i)%256)
+	# 		d.data[j]=hue(random.randint(0,255))
+	# 	d.brightness(random.randint(1,255))
 	# 	d.update()
 	# 	time.sleep(0.01)
+	##########################################
+	d.brightness(255)
+	for i in range(1000):
+		for j in range(0,256):
+			d.data[j]=hue((j+i)%256)
+		d.update()
+		time.sleep(0.01)
 Display(brightness=16).run(main)
