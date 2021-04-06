@@ -1,4 +1,3 @@
-from PIL import Image
 import atexit
 import numpy as np
 import rpi_ws281x as ws
@@ -7,7 +6,6 @@ import rpi_ws281x as ws
 
 def _map_pos(x,y,sz):
 	return (x if y%2==0 else sz[0]-x-1)+y*sz[0]
-
 
 
 
