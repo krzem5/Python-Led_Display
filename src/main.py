@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from display import color,Display
+from display import Display
 from PIL import Image,ImageDraw
 import math
 import random

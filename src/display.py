@@ -10,7 +10,7 @@ def _map_pos(x,y,sz):
 
 
 def color(r=255,g=None,b=None):
-	if (g==None):
+	if (g is None):
 		g=b=r
 	return (r<<16)|(g<<8)|b
 
